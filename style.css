@@ -117,6 +117,7 @@ body{
     transform: translate(40%, 60%) rotate(40deg);
 }
 
+
 #outerBox{
     margin: auto;
     width: 100%;
@@ -156,7 +157,6 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     border-right: 1px solid rgb(94, 36, 36);
     border-radius: 5px;
-   
 }
 
 .innerBox{
@@ -172,6 +172,7 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     border-radius: 5px;
     transition: 0.5s;
+    white-space: nowrap;
 }
 
 .innerBox:hover{
