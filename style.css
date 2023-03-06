@@ -1,22 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 body{
     background: #231123;
     color: white;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Poppins';
 }
 
 #headbox{
     display: inline-block;
     text-align: center;
     width: 100%;
-    margin-top: 5%;
+    font-size: 350%;
+    transition: 0.5s;
 }
 
 .headline{
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     text-align: center;
-    font-size: 60px;
     display: inline-block;
     transition: transform 350ms ease;
+}
+
+#titlename{
+    opacity: 0%;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-size: 350%;
+    margin-top: 1%;
+    transition: 0.5s;
 }
 
 #headbox > .headline{
@@ -131,18 +141,22 @@ body{
 
 .button{
     margin: 5px;
-    margin-left: 0px;
     border: 0px;
-    width: 80%;
+    width: 30%;
     padding: 20px;
-    padding-left: 0px;
     display: inline-block;
     text-align: center;
     background: #231123;
     color: white; 
     font-size: 30px;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    padding-right: 18%;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
+.button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    
 }
 
 .num{
@@ -154,29 +168,55 @@ body{
     background: rgb(94, 36, 36);
     color: white; 
     font-size: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     border-right: 1px solid rgb(94, 36, 36);
     border-radius: 5px;
 }
 
-.innerBox{
+#nameBox{
     margin: 5px;
-    padding-left: 0px;
-    width: 30%;
-    border: 1px solid white;
+    width: 95%;
     display: inline-block;
     text-align: center;
     background: #231123;
     color: white; 
     font-size: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    border-radius: 5px;
-    transition: 0.5s;
     white-space: nowrap;
+    transition: 1s ease-in-out;
 }
 
-.innerBox:hover{
-    transform: scale(1.1);
+#chapterBox{
+    margin: 5px;
+    width: 95%;
+    display: inline-block;
+    text-align: center;
+    background: #231123;
+    color: white;
+    font-size: 20px;
+    white-space: nowrap;
+    transition:  1s ease-in-out;
+}
+
+#returnButton{
+    opacity: 0%;
+    display: inline-block;
+    background: #231123;
+    color: white;
+    border: 1px solid white;
     transition: 0.5s;
-    
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 8px;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    width: 50px;
+    height: 50px;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 14px;
+}
+
+#returnButton:hover{
+    transform: scale(0.9);
+    transition: 0.5s;
 }
